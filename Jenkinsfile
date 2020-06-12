@@ -1,11 +1,11 @@
-pipeline {
+ipipeline {
     agent any
 	
     stages {
         stage('Build') {
 		
 			when{
-				buildingTag()
+				tag "2.0"
 			}
 		
             steps {                
